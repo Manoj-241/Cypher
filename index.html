@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypherbytz - Web as a Service Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo" onclick="scrollToSection('hero')">
+                <img src="logo.png" alt="Cypherbytz">
+                <span class="logo-text">Cypherbytz</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a onclick="scrollToSection('hero')">Home</a></li>
+                <li><a onclick="scrollToSection('features')">Features</a></li>
+                <li><a onclick="scrollToSection('pricing')">Pricing</a></li>
+                <li><a onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+            
+            <div class="nav-cta">
+                <!-- <a href="#" class="btn btn-gradient">Get Started</a> -->
+                <button class="btn btn-gradient" onclick="openGoogleForm()">
+                    Get Started
+                </button>
+            </div>
+
+            <!-- <div class="container">
+                <button class="open-form-button" onclick="openGoogleForm()">
+                    Fill 
+                </button>
+            </div> -->
+            
+            <button class="mobile-menu" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+            </button>
+            
+            <div class="mobile-nav" id="mobileNav">
+                <a onclick="scrollToSection('hero')">Home</a>
+                <a onclick="scrollToSection('features')">Features</a>
+                <a onclick="scrollToSection('pricing')">Pricing</a>
+                <a onclick="scrollToSection('contact')">Contact</a>
+                <a href="#" class="btn btn-outline">Sign In</a>
+                <a href="#" class="btn btn-gradient">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="logo.png" alt="Cypherbytz Logo">
+            </div>
+            
+            <h1>Build. Deploy. Scale.</h1>
+            
+            <p>Transform your ideas into powerful web applications with our comprehensive Web-as-a-Service platform. From concept to deployment, Cypherbytz provides everything you need to create, manage, and scale modern web applications without the complexity.</p>
+            
+            <div class="hero-buttons">
+                <!-- <a href="#" class="btn btn-gradient btn-hero">Start Building </a>
+                <a href="#" class="btn btn-outline btn-hero">Request Demo</a> -->
+                <button class="btn btn-gradient btn-hero" onclick="openGoogleForm()">
+                    Start Building 
+                </button>
+                <button class="btn btn-outline btn-hero" onclick="openGoogleForm()">
+                    Request Demo 
+                </button>
+            </div>
+
+            <div class="social-proof">
+                <p>Trusted by developers worldwide</p>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Everything You Need to Build Modern Web Apps</h2>
+                <p class="section-description">Our comprehensive platform provides all the tools and services you need to create, deploy, and manage web applications at scale.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-badge">Speed</div>
+                    <h3 class="feature-title">Rapid Development</h3>
+                    <p class="feature-description">Build web applications 10x faster with our pre-built components and templates.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <div class="feature-badge">Scalable</div>
+                    <h3 class="feature-title">Auto-Scaling Infrastructure</h3>
+                    <p class="feature-description">Never worry about server management. Our platform scales automatically with your traffic.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <div class="feature-badge">Deploy</div>
+                    <h3 class="feature-title">One-Click Deployment</h3>
+                    <p class="feature-description">Deploy your applications instantly with our streamlined deployment pipeline.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <div class="feature-badge">Secure</div>
+                    <h3 class="feature-title">Enterprise Security</h3>
+                    <p class="feature-description">Bank-level security with automated backups, SSL certificates, and DDoS protection.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <div class="feature-badge">Analytics</div>
+                    <h3 class="feature-title">Real-time Analytics</h3>
+                    <p class="feature-description">Monitor your application performance with detailed analytics and insights.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛟</div>
+                    <div class="feature-badge">Support</div>
+                    <h3 class="feature-title">24/7 Support</h3>
+                    <p class="feature-description">Get expert help whenever you need it with our dedicated support team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-description">Choose the perfect plan for your needs. Start free and scale as you grow.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="plan-name">Starter</h3>
+                    <div class="plan-price">5k</div>
+                    <p class="plan-description">Perfect for getting started and small projects</p>
+                    <ul class="plan-features">
+                        <li>Theme based design</li>
+                        <li>Landing page</li>
+                        <li>Community support</li>
+                        <li>Basic templates</li>
+                        <li>SSL certificates</li>
+                    </ul>
+                    <!-- <a href="#" class="btn btn-outline" style="width: 100%;">Get Started</a> -->
+                </div>
+                
+                <div class="pricing-card popular">
+                    <h3 class="plan-name">Professional</h3>
+                    <div class="plan-price">20k<span class="plan-period">/per project</span></div>
+                    <p class="plan-description">For growing businesses and professional developers</p>
+                    <ul class="plan-features">
+                        <li>Animated design projects</li>
+                        <li>Priority support</li>
+                        <li>Advanced templates</li>
+                        <li>Custom domains</li>
+                        <li>Analytics dashboard</li>
+                        <li>API access</li>
+                    </ul>
+                    <!-- <a href="#" class="btn btn-gradient" style="width: 100%;">Start Trial</a> -->
+                </div>
+                
+                <div class="pricing-card">
+                    <h3 class="plan-name">Enterprise</h3>
+                    <div class="plan-price">Custom</div>
+                    <p class="plan-description">For large organizations with advanced needs</p>
+                    <ul class="plan-features">
+                        <li>Everything in Professional</li>
+                        <li>Dedicated infrastructure</li>
+                        <li>24/7 phone support</li>
+                        <li>SLA guarantees</li>
+                        <li>Custom AI integrations</li>
+                        <li>Advanced security</li>
+                        <li>Team management</li>
+                    </ul>
+                    <!-- <a href="#" class="btn btn-outline" style="width: 100%;">Contact Sales</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to Get Started?</h2>
+                <p class="section-description">Join thousands of developers who are already building amazing web applications with Cypherbytz.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 3rem;">Get in Touch</h3>
+                    <p style="color: #94a3b8; margin-bottom: 2rem;">Have questions?We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                        Have a question, a vision, or just an idea?
+                        We’re not just here to build websites — we’re here to build relationships, tell your story, and create digital experiences that truly reflect your purpose.
+                        Drop us a message, and you won’t be talking to bots — you’ll hear from real humans who care. 
+                    </p>
+                    
+                     <!-- <form>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div class="form-group">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-input" placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-input" placeholder="Doe">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Company (Optional)</label>
+                            <input type="text" class="form-input" placeholder="Your Company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-input form-textarea" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        
+                        
+                    </form>  -->
+                    <button type="submit" class="btn btn-gradient" onclick="openGoogleForm()" style="width: 100%;">Send Message</button>
+                </div>
+
+                <div class="contact-info">
+                    <div class="cta-card">
+                        <h3 style="margin-bottom: 1rem;">Start Building Today</h3>
+                        <p style="margin-bottom: 1.5rem; opacity: 0.9;"> Every big idea started small — and we’re here to help yours shine.Your growth is our goal — we succeed only when you do.</p>
+                        <!-- <a href="#" class="btn btn-outline" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3);"></a> -->
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4 style="margin-bottom: 0.25rem;">Email Support</h4>
+                            <p style="color: #94a3b8; margin-bottom: 0.25rem;">support@cypherbytz.com</p>
+                            <p style="color: #64748b; font-size: 0.875rem;">We typically respond within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">💬</div>
+                        <div>
+                            <h4 style="margin-bottom: 0.25rem;">Live Chat</h4>
+                            <p style="color: #94a3b8; margin-bottom: 0.25rem;">Available 24/7</p>
+                            <p style="color: #64748b; font-size: 0.875rem;">Get instant help from our support team</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">✅</div>
+                        <div>
+                            <h4 style="margin-bottom: 0.25rem;">Status Page</h4>
+                            <p style="color: #94a3b8; margin-bottom: 0.25rem;">status.cypherbytz.com</p>
+                            <p style="color: #64748b; font-size: 0.875rem;">Real-time system status and updates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Cypherbytz">
+                    <p>Empowering developers to build, deploy, and scale web applications with ease.</p>
+                    <div class="social-links">
+                        <a href="#">📱</a>
+                        <a href="#">💻</a>
+                        <a href="#">🔗</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <!-- <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li> -->
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Cypherbytz. All rights reserved.</p>
+                <p>Built by Shambu, Vinod and Manoj for developers worldwide</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
